@@ -1,79 +1,71 @@
-This is a new [**React Native**](https://reactnative.dev) project, bootstrapped using [`@react-native-community/cli`](https://github.com/react-native-community/cli).
+# Repository Setup Instructions
 
-# Getting Started
+## Introduction
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+This document provides instructions for setting up and using the Incredible Todo List App repository.
 
-## Step 1: Start the Metro Server
+## Prerequisites
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+To set up and use this project, you need the following prerequisites:
 
-To start Metro, run the following command from the _root_ of your React Native project:
+- Node.js and npm (Node Package Manager)
+- Git
+- MongoDB (if you are using a database)
 
-```bash
-# using npm
-npm start
+## Installation Steps
 
-# OR using Yarn
-yarn start
-```
+1. **Clone the Repository**:
 
-## Step 2: Start your Application
+    ```bash
+    git clone https://github.com/DucPhatNg9a5/Incredible-Todo-List-App.git
+    ```
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
+2. **Navigate to the Project Directory**:
 
-### For Android
+    ```bash
+    cd Incredible-Todo-List-App
+    ```
 
-```bash
-# using npm
-npm run android
+3. **Install Dependencies**:
 
-# OR using Yarn
-yarn android
-```
+    ```bash
+    npm install
+    ```
 
-### For iOS
+4. **Configuration**:
 
-```bash
-# using npm
-npm run ios
+    Copy the `.env.example` file to `.env` and update it with your configuration details.
 
-# OR using Yarn
-yarn ios
-```
+5. **Database Setup**:
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+    If you are using MongoDB, ensure it's running and update the database connection details in your `.env` file.
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+6. **Run the Project**:
 
-## Step 3: Modifying your App
+    ```bash
+    npm start
+    ```
 
-Now that you have successfully run the app, let's modify it.
+7. **Testing**:
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+    To run tests, use the following command:
 
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
+    ```bash
+    npm test
+    ```
 
-## Congratulations! :tada:
+8. **Usage**:
 
-You've successfully run and modified your React Native App. :partying_face:
+    Access the application by opening your web browser and navigating to [http://localhost:3000](http://localhost:3000).
 
-### Now what?
+## Troubleshooting
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
+If you encounter any issues during setup, please [open an issue](https://github.com/DucPhatNg9a5/Incredible-Todo-List-App/issues) on the project's GitHub repository for assistance.
 
-# Troubleshooting
+## License
 
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+This project is licensed under the MIT License. For details, see the [LICENSE](LICENSE) file.
 
-# Learn More
+## Conclusion
 
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+You have successfully set up the Incredible Todo List App. Enjoy!
