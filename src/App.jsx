@@ -18,10 +18,18 @@ function App() {
     'Study'
   ]);
 
+  const handleAdd = (newTask) => {
+    if (tasks.find((task) => task === newTask)) {
+      alert('Task already exists');      
+    } else {
+      setTasks([...tasks, newTask]);
+    }
+  };
+
   return (
     <SafeAreaView>
       <ToDoList tasks={tasks}/>
-      <ToDoForm />
+      <ToDoForm onAdd={handleAdd}/>
     </SafeAreaView>
   );
 }
